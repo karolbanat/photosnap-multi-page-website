@@ -82,7 +82,7 @@ function startBrowserSync(done) {
 
 function watchForChanges(done) {
 	watch('./*.html').on('change', reload);
-	watch([paths.sass, paths.ts, paths.assets], parallel(sassCompiler, typeScript, minifyImages)).on('change', reload);
+	watch([paths.sass, paths.ts], parallel(sassCompiler, typeScript)).on('change', reload);
 	done();
 }
 
