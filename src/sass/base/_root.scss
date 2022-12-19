@@ -10,6 +10,7 @@
 	}
 
 	/* font families */
+	--ff-primary: 'DM Sans', sans-serif;
 
 	/* font weights */
 	@each $font-weight, $value in variables.$font-weights {
@@ -18,7 +19,7 @@
 
 	/* font sizes */
 	@each $screen, $sizes in variables.$font-sizes {
-		@if $screen == small {
+		@if $screen == starting {
 			@each $size, $value in $sizes {
 				--fz-#{$size}: #{$value};
 			}
@@ -31,15 +32,8 @@
 		}
 	}
 
-	/* border radius */
-	@each $radius, $value in variables.$border-radius {
-		--borr-#{$radius}: #{$value};
-	}
-
-	/* spacings */
-	@each $unit, $sizes in variables.$spacings {
-		@each $size, $value in $sizes {
-			--spacing-#{$unit}-#{$size}: #{$value};
-		}
+	/* letter spacing */
+	@each $letter-spacing, $value in variables.$letter-spacings {
+		--ls-#{$letter-spacing}: #{$value};
 	}
 }

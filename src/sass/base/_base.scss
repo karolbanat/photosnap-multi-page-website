@@ -1,0 +1,17 @@
+body {
+	font-size: var(--fz-400);
+	font-weight: var(--fw-regular);
+	font-family: var(--ff-primary);
+	color: var(--clr-neutral-960);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: var(--fw-bold);
+}
+
+h1,
+h2 {
+	line-height: 1.2;
+}
