@@ -8,6 +8,10 @@
 	border: none;
 	cursor: pointer;
 
+	& * {
+		pointer-events: none;
+	}
+
 	&[aria-expanded='false'] &__icon-close {
 		display: none;
 	}
@@ -16,6 +20,6 @@
 		display: block;
 	}
 	&[aria-expanded='true'] &__icon-open {
-		display: block;
+		display: none;
 	}
 }
