@@ -1,0 +1,17 @@
+.link {
+	display: inline-block;
+	font-size: var(--fz-200);
+	font-weight: var(--fw-bold);
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1.1;
+	letter-spacing: var(--ls-500);
+	color: var(--clr-neutral-900);
+	cursor: pointer;
+	transition: opacity 0.35s ease-in-out;
+
+	&:hover,
+	&:focus-visible {
+		opacity: 0.3;
+	}
+}

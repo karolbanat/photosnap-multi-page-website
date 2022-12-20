@@ -1,0 +1,62 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-navigation {
+	position: relative;
+	padding-block: 1.6rem;
+
+	&__nav {
+		display: flex;
+		flex: 1; // flex-grow set to 1 so it will take available space and nav-list's margin-inline will work
+		@include mxn.max-mq(medium) {
+			/* positioning */
+			display: none;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translateY(100%);
+			/* display */
+			flex-direction: column;
+			gap: 2rem;
+			/* sizing */
+			padding-block-end: 3.2rem;
+			padding-inline: 3.2rem;
+			width: 100%;
+			/* appearance */
+			text-align: center;
+			background-color: var(--clr-neutral-100);
+
+			&[data-expanded] {
+				display: flex;
+			}
+		}
+		@include mxn.mq(medium) {
+			align-items: center;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		gap: 1.6rem;
+		@include mxn.max-mq(medium) {
+			flex-direction: column;
+			align-items: center;
+			padding-block: 2rem;
+			width: 100%;
+			border-bottom: 1px solid var(--clr-neutral-925);
+		}
+		@include mxn.mq(medium) {
+			gap: 3.6rem;
+			margin-inline: auto;
+		}
+	}
+
+	&__nav-link {
+		font-size: var(--fz-nav-link);
+	}
+
+	&__menu-toggle {
+		@include mxn.mq(medium) {
+			display: none;
+		}
+	}
+}
