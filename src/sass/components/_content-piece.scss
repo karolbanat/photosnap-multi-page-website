@@ -1,0 +1,37 @@
+@use '../abstracts/mixins' as mxn;
+
+.content-piece {
+	--flow-spacer: 1.5em;
+	display: grid;
+	align-content: center;
+	padding-inline: 3.2rem;
+	padding-block: 7.2rem;
+	background-color: var(--bg-content);
+	color: var(--clr-content-text);
+	@include mxn.mq(medium) {
+		padding-inline: 5.4rem;
+	}
+	@include mxn.mq(large) {
+		padding-inline: 11.2rem;
+	}
+
+	&__heading {
+		max-width: 14ch;
+		font-size: var(--fz-700);
+		font-weight: var(--fw-bold);
+		text-transform: uppercase;
+		letter-spacing: var(--ls-400);
+		color: var(--clr-content-heading, black);
+	}
+
+	&--dark {
+		--bg-content: var(--clr-neutral-900);
+		--clr-content-heading: var(--clr-neutral-100);
+		--clr-content-text: var(--clr-neutral-160);
+	}
+	&--light {
+		--bg-content: var(--clr-neutral-100);
+		--clr-content-heading: var(--clr-neutral-900);
+		--clr-content-text: var(--clr-neutral-960);
+	}
+}

@@ -1,0 +1,27 @@
+.point-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 2.4rem;
+	font-size: var(--fz-200);
+	font-weight: var(--fw-bold, 700);
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: var(--ls-500);
+	color: var(--point-link-text, currentColor);
+	cursor: pointer;
+
+	&:hover,
+	&:focus-visible {
+		& span {
+			text-decoration: underline;
+		}
+	}
+
+	&--light {
+		--point-link-text: var(--clr-neutral-100);
+	}
+
+	&--dark {
+		--point-link-text: var(--clr-neutral-900);
+	}
+}
