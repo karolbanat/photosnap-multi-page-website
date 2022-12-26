@@ -39,7 +39,7 @@
 
 .doubling-grid {
 	display: grid;
-	@include mxn.mq(medium) {
+	@include mxn.mq(small) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	@include mxn.mq(large) {

@@ -1,0 +1,66 @@
+@use '../../abstracts/mixins' as mxn;
+
+.story-card {
+	--layer-1: 10;
+	--layer-2: 20;
+	position: relative;
+	display: grid;
+
+	/* shadow between header and image */
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: var(--layer-1);
+		inset: auto 0 0;
+		height: min(35rem, 100%);
+		background-image: linear-gradient(to bottom, hsl(0deg 0% 0% / 0.01), hsl(0deg 0% 0% / 0.66));
+	}
+
+	/* image and content are in the same cell in card grid */
+	&__picture,
+	&__header {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	&__picture img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__header {
+		z-index: var(--layer-2); // place content on top so shadow won't cover it
+		align-self: end; // place content at the bottom of the grid cell
+		padding-inline: 3.2rem;
+		padding-block: 4rem;
+		color: var(--clr-neutral-100);
+		@include mxn.mq(medium) {
+			padding-inline: 4rem;
+		}
+	}
+
+	&__heading {
+		font-size: var(--fz-500);
+		font-weight: var(--fw-bold);
+	}
+
+	&__author {
+		font-size: var(--fz-300);
+	}
+
+	&__visual-line {
+		height: 1px;
+		margin-block-start: 1.6rem;
+		margin-block-end: 2rem;
+		background-color: var(--clr-neutral-100);
+		border: none;
+		opacity: 0.25;
+	}
+
+	&__read-more {
+		font-size: var(--fz-200);
+		font-weight: var(--fw-bold);
+		text-transform: uppercase;
+		letter-spacing: var(--ls-500);
+	}
+}

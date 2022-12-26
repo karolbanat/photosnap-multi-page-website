@@ -9,3 +9,9 @@
 		justify-content: normal;
 	}
 }
+
+.flex-between-centered {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
