@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as mxn;
+
+.section-spacer {
+	margin-block: var(--section-spacer, 10rem);
+
+	&[data-space='medium'] {
+		--section-spacer: clamp(8rem, 17.5vw, 12rem);
+	}
+}
