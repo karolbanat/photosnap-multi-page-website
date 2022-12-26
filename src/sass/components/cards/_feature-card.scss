@@ -20,4 +20,8 @@
 		font-size: var(--fz-500);
 		color: var(--clr-neutral-900);
 	}
+
+	& p {
+		max-width: 45ch;
+	}
 }
