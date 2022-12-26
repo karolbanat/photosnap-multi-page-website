@@ -4,6 +4,7 @@
 	--layer-1: 10;
 	--layer-2: 20;
 	position: relative;
+	isolation: isolate;
 	display: grid;
 
 	/* shadow between header and image */
