@@ -46,3 +46,20 @@
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
+
+.triple-grid {
+	display: grid;
+	@include mxn.mq(large) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&[data-gap='loose'] {
+		gap: 5.6rem;
+		@include mxn.mq(medium) {
+			gap: 8rem;
+		}
+		@include mxn.mq(large) {
+			gap: 3rem;
+		}
+	}
+}
