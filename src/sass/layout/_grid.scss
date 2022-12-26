@@ -36,3 +36,13 @@
 		--first-column: auto;
 	}
 }
+
+.doubling-grid {
+	display: grid;
+	@include mxn.mq(medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include mxn.mq(large) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
