@@ -1,0 +1,7 @@
+.social-link {
+	transition: filter 0.35s ease;
+
+	&:not(:hover, :focus-visible) {
+		filter: brightness(0) invert(1);
+	}
+}
