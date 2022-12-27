@@ -6,7 +6,7 @@
 	text-transform: uppercase;
 	line-height: 1.1;
 	letter-spacing: var(--ls-500);
-	color: var(--clr-neutral-900);
+	color: var(--clr-link, currentColor);
 	cursor: pointer;
 	transition: opacity 0.35s ease-in-out;
 

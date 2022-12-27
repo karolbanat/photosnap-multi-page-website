@@ -63,3 +63,57 @@
 		}
 	}
 }
+
+.page-footer-grid {
+	display: grid;
+	justify-items: center;
+	gap: 2rem;
+	grid-template-areas:
+		'logo'
+		'socials'
+		'navigation'
+		'cta'
+		'copyright';
+	@include mxn.mq(medium) {
+		justify-items: unset;
+		grid-template-areas:
+			'logo cta'
+			'navigation navigation'
+			'socials copyright';
+	}
+	@include mxn.mq(large) {
+		grid-template-areas:
+			'logo navigation cta'
+			'socials navigation copyright';
+	}
+
+	& > [data-area='logo'] {
+		grid-area: logo;
+	}
+
+	& > [data-area='socials'] {
+		grid-area: socials;
+		@include mxn.mq(medium) {
+			align-self: end;
+		}
+	}
+
+	& > [data-area='navigation'] {
+		grid-area: navigation;
+	}
+
+	& > [data-area='cta'] {
+		grid-area: cta;
+		@include mxn.mq(medium) {
+			justify-self: end;
+		}
+	}
+
+	& > [data-area='copyright'] {
+		grid-area: copyright;
+		@include mxn.mq(medium) {
+			justify-self: end;
+			align-self: end;
+		}
+	}
+}

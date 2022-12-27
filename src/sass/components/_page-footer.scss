@@ -1,0 +1,30 @@
+@use '../abstracts/mixins' as mxn;
+
+.page-footer {
+	padding-block: 5.6rem;
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-900);
+	@include mxn.mq(medium) {
+		padding-block: 6.4rem;
+	}
+
+	&__nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.6rem;
+		@include mxn.mq(medium) {
+			flex-direction: row;
+			gap: 2.8rem;
+		}
+		@include mxn.mq(large) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+	}
+
+	&__copyright {
+		opacity: 0.5;
+	}
+}
