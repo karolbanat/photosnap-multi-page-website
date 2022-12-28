@@ -24,119 +24,633 @@
 </head>
 
 <body>
+    <a href="#main-content"
+       class="skip-link">Skip to content</a>
 
-    Stories
-    Features
-    Pricing
+    <header>
+        <nav aria-label="Primary"
+             class="primary-navigation">
+            <div class="container">
+                <div class="primary-navigation-flex">
+                    <a href="#">
+                        <img src="./dist/assets/shared/desktop/logo.svg"
+                             alt="Photosnap">
+                    </a>
+                    <button aria-controls="primary-nav"
+                            aria-expanded="false"
+                            aria-label="Open menu"
+                            class="toggle-button primary-navigation__menu-toggle">
+                        <img src="./dist/assets/shared/mobile/menu.svg"
+                             alt=""
+                             class="toggle-button__icon-open">
+                        <img src="./dist/assets/shared/mobile/close.svg"
+                             alt=""
+                             class="toggle-button__icon-close">
+                    </button>
+                    <div id="primary-nav"
+                         class="primary-navigation__nav">
+                        <ul class="primary-navigation__nav-list">
+                            <li>
+                                <a href="./stories.html"
+                                   class="link primary-navigation__nav-link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="./features.html"
+                                   class="link primary-navigation__nav-link">Features</a>
+                            </li>
+                            <li>
+                                <a href="./pricing.html"
+                                   class="link primary-navigation__nav-link">Pricing</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                           class="button button--dark primary-navigation__nav-link">Get an invite</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    Get an invite
+    <main id="main-content">
+        <!-- featured story section start -->
+        <section aria-labelledby="featured-story-heading">
+            <div class="uneven-grid"
+                 data-direction="rtl">
+                <picture>
+                    <source media="(min-width: 992px)"
+                            srcset="./dist/assets/stories/desktop/moon-of-appalacia.jpg">
+                    <source media="(min-width: 768px)"
+                            srcset="./dist/assets/stories/tablet/moon-of-appalacia.jpg">
+                    <img src="./dist/assets/stories/mobile/moon-of-appalacia.jpg"
+                         alt="Man with camera standing on the platform over the lake, looking at the landscape."
+                         class="full-size-img">
+                </picture>
+                <header class="content-piece content-piece--dark | flow">
+                    <p class="content-piece__kicker">Last month's featured story</p>
+                    <h1 id="featured-story-heading"
+                        class="content-piece__heading">Hazy full moon of Appalachia</h1>
+                    <p class="content-piece__creation"><span>March 2nd 2020</span> by John Appleseed</p>
+                    <p>The dissected plateau area, while not actually made up of geological mountains,
+                        is popularly called "mountains," especially in eastern Kentucky and West Virginia,
+                        and while the ridges are not high, the terrain is extremely rugged.</p>
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Read the story</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </header>
+            </div>
+        </section>
+        <!-- featured story section end -->
 
-    Last month's featured story
+        <!-- story cards section start -->
+        <section aria-labelledby="stories-heading">
+            <h2 id="stories-heading"
+                class="visually-hidden">Stories</h2>
+            <!-- home cards start -->
+            <ul class="doubling-grid">
+                <!-- mountains card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/mountains.jpg">
+                                <img src="./dist/assets/stories/mobile/mountains.jpg"
+                                     alt="Mountains above the clouds.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 16th 2020</p>
+                                <h3 class="story-card__heading">The Mountains</h3>
+                                <p class="story-card__author">by John Appleseed</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- mountains card end -->
 
-    Hazy full moon of Appalachia
-    March 2nd 2020
-    by John Appleseed
+                <!-- sunset sityscapes card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/cityscapes.jpg">
+                                <img src="./dist/assets/stories/mobile/cityscapes.jpg"
+                                     alt="Cityscapes in sunset from above.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 14th 2020</p>
+                                <h3 class="story-card__heading">Sunset Cityscapes</h3>
+                                <p class="story-card__author">by Benjamin Cruz</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- sunset sityscapes card end -->
 
-    The dissected plateau area, while not actually made up of geological mountains,
-    is popularly called "mountains," especially in eastern Kentucky and West Virginia,
-    and while the ridges are not high, the terrain is extremely rugged.
+                <!-- 18 days voyage card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/18-days-voyage.jpg">
+                                <img src="./dist/assets/stories/mobile/18-days-voyage.jpg"
+                                     alt="Outline of a man walking in the sunset.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 11th 2020</p>
+                                <h3 class="story-card__heading">18 Days Voyage</h3>
+                                <p class="story-card__author">by Alexei Borodin</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- 18 days voyage card end -->
 
-    Read the story
+                <!-- architecturals card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/architecturals.jpg">
+                                <img src="./dist/assets/stories/mobile/architecturals.jpg"
+                                     alt="Building with pretty shape.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 9th 2020</p>
+                                <h3 class="story-card__heading">Architecturals</h3>
+                                <p class="story-card__author">by Samantha Brooke</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- architecturals card end -->
 
-    April 16th 2020
-    The Mountains
-    by John Appleseed
-    Read Story
+                <!-- world tour card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/world-tour.jpg">
+                                <img src="./dist/assets/stories/mobile/world-tour.jpg"
+                                     alt="View of lake, forest and mountains.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 7th 2020</p>
+                                <h3 class="story-card__heading">World Tour 2019</h3>
+                                <p class="story-card__author">by Timothy Wagner</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- world tour card end -->
 
-    April 14th 2020
-    Sunset Cityscapes
-    by Benjamin Cruz
-    Read Story
+                <!-- unforseen corners card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/unforeseen-corners.jpg">
+                                <img src="./dist/assets/stories/mobile/unforeseen-corners.jpg"
+                                     alt="Sun in sunset peaking through tree on small hill.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">April 3rd 2020</p>
+                                <h3 class="story-card__heading">Unforeseen Corners</h3>
+                                <p class="story-card__author">by William Malcolm</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- unforseen corners card end -->
 
-    April 11th 2020
-    18 Days Voyage
-    by Alexei Borodin
-    Read Story
+                <!-- king on Africa card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/king-on-africa.jpg">
+                                <img src="./dist/assets/stories/mobile/king-on-africa.jpg"
+                                     alt="Lion.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 29th 2020</p>
+                                <h3 class="story-card__heading">King on Africa: Part II</h3>
+                                <p class="story-card__author">by Tim Hillenburg</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- king on Africa card end -->
 
-    April 9th 2020
-    Architecturals
-    by Samantha Brooke
-    Read Story
+                <!-- trip to nowhere card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/trip-to-nowhere.jpg">
+                                <img src="./dist/assets/stories/mobile/trip-to-nowhere.jpg"
+                                     alt="Tree and its reflection in the water.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 21st 2020</p>
+                                <h3 class="story-card__heading">The Trip to Nowhere</h3>
+                                <p class="story-card__author">by Felicia Rourke</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- trip to nowhere card end -->
 
-    April 7th 2020
-    World Tour 2019
-    by Timothy Wagner
-    Read Story
+                <!-- rage of the sea card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/rage-of-the-sea.jpg">
+                                <img src="./dist/assets/stories/mobile/rage-of-the-sea.jpg"
+                                     alt="Ocean waves and sun in sunset.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 19th 2020</p>
+                                <h3 class="story-card__heading">Rage of The Sea</h3>
+                                <p class="story-card__author">by Mohammed Abdul</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- rage of the sea card end -->
 
-    April 7th 2020
-    World Tour 2019
-    by Timothy Wagner
-    Read Story
+                <!-- running free card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/running-free.jpg">
+                                <img src="./dist/assets/stories/mobile/running-free.jpg"
+                                     alt="Two running horses.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 16th 2020</p>
+                                <h3 class="story-card__heading">Running Free</h3>
+                                <p class="story-card__author">by Michelle</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- running free card end -->
 
-    April 3rd 2020
-    Unforeseen Corners
-    by William Malcolm
-    Read Story
+                <!-- behind the waves card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/behind-the-waves.jpg">
+                                <img src="./dist/assets/stories/mobile/behind-the-waves.jpg"
+                                     alt="Wave.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 11th 2020</p>
+                                <h3 class="story-card__heading">Behind the Waves</h3>
+                                <p class="story-card__author">by Lamarr Wilson</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- behind the waves card end -->
 
-    March 29th 2020
-    King on Africa: Part II
-    by Tim Hillenburg
-    Read Story
+                <!-- calm waters card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/calm-waters.jpg">
+                                <img src="./dist/assets/stories/mobile/calm-waters.jpg"
+                                     alt="Lake and mountains.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 9th 2020</p>
+                                <h3 class="story-card__heading">Calm Waters</h3>
+                                <p class="story-card__author">by Samantha Brooke</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- calm waters card end -->
 
-    March 21st 2020
-    The Trip to Nowhere
-    by Felicia Rourke
-    Read Story
+                <!-- the milky way card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/milky-way.jpg">
+                                <img src="./dist/assets/stories/mobile/milky-way.jpg"
+                                     alt="Sky with stars and milky way trail.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 5th 2020</p>
+                                <h3 class="story-card__heading">The Milky Way</h3>
+                                <p class="story-card__author">by Benjamin Cruz</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- the milky way card end -->
 
-    March 19th 2020
-    Rage of The Sea
-    by Mohammed Abdul
-    Read Story
+                <!-- dark forest night card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/dark-forest.jpg">
+                                <img src="./dist/assets/stories/mobile/dark-forest.jpg"
+                                     alt="Trees and mountain covered in snow.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 4th 2020</p>
+                                <h3 class="story-card__heading">Night at The Dark Forest</h3>
+                                <p class="story-card__author">by Mohammed Abdul</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- dark forest night card end -->
 
-    March 16th 2020
-    Running Free
-    by Michelle
-    Read Story
+                <!-- somwarpet's beauty card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/somwarpet.jpg">
+                                <img src="./dist/assets/stories/mobile/somwarpet.jpg"
+                                     alt="Flowers.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">March 1st 2020</p>
+                                <h3 class="story-card__heading">Somwarpet’s Beauty</h3>
+                                <p class="story-card__author">by Michelle</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- somwarpet's beauty card end -->
 
-    March 11th 2020
-    Behind the Waves
-    by Lamarr Wilson
-    Read Story
+                <!-- land of dreams card -->
+                <li>
+                    <a href="#"
+                       class="card-link">
+                        <article class="story-card">
+                            <picture class="story-card__picture">
+                                <source media="(min-width: 768px)"
+                                        srcset="./dist/assets/stories/desktop/land-of-dreams.jpg">
+                                <img src="./dist/assets/stories/mobile/land-of-dreams.jpg"
+                                     alt="Small church in mountains.">
+                            </picture>
+                            <header class="story-card__header">
+                                <p class="story-card__date">February 25th 2020</p>
+                                <h3 class="story-card__heading">Land of Dreams</h3>
+                                <p class="story-card__author">by William Malcolm</p>
+                                <hr class="story-card__visual-line">
+                                <p class="flex-between-centered">
+                                    <span class="story-card__read-more">Read Story</span>
+                                    <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                                         alt="">
+                                </p>
+                            </header>
+                        </article>
+                    </a>
+                </li>
+                <!-- land of dreams card end -->
+            </ul>
+            <!-- home cards end -->
+        </section>
+        <!-- story cards section end -->
+    </main>
 
-    March 9th 2020
-    Calm Waters
-    by Samantha Brooke
-    Read Story
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer-grid">
+                <!-- footer logo start -->
+                <div data-area="logo">
+                    <a href="#">
+                        <img src="./dist/assets/shared/desktop/logo-light.svg"
+                             alt="Photosnap">
+                    </a>
+                </div>
+                <!-- footer logo end -->
 
-    March 5th 2020
-    The Milky Way
-    by Benjamin Cruz
-    Read Story
+                <!-- footer socials start -->
+                <div data-area="socials">
+                    <ul class="socials-flex">
+                        <li>
+                            <a aria-label="Facebook"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/facebook.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="YouTube"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/youtube.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Twitter"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/twitter.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Pinterest"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/pinterest.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Instagram"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/instagram.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer socials end -->
 
-    March 4th 2020
-    Night at The Dark Forest
-    by Mohammed Abdul
-    Read Story
+                <!-- footer navigation start -->
+                <div data-area="navigation">
+                    <nav aria-label="Footer">
+                        <ul class="page-footer__nav-list">
+                            <li>
+                                <a href="#"
+                                   class="link">Home</a>
+                            </li>
+                            <li>
+                                <a href="./stories.html"
+                                   class="link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="./features.html"
+                                   class="link">Features</a>
+                            </li>
+                            <li>
+                                <a href="./pricing.html"
+                                   class="link">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- footer navigation end -->
 
-    March 1st 2020
-    Somwarpet’s Beauty
-    by Michelle
-    Read Story
+                <!-- footer invite link start -->
+                <div data-area="cta">
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Get an invite</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </div>
+                <!-- footer invite link end -->
 
-    February 25th 2020
-    Land of Dreams
-    by William Malcolm
-    Read Story
+                <div data-area="copyright">
+                    <p class="page-footer__copyright">Copyright 2019. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    Home
-    Stories
-    Features
-    Pricing
-
-    Get an invite
-
-    Copyright 2019. All Rights Reserved
-
+    <script src="./dist/js/main.min.js"
+            defer></script>
 </body>
 
 </html>
