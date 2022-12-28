@@ -45,7 +45,8 @@
 		font-weight: var(--fw-bold);
 	}
 
-	&__author {
+	&__author,
+	&__date {
 		font-size: var(--fz-300);
 	}
 
