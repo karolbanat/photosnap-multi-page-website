@@ -12,7 +12,7 @@
 		padding-inline: 5.4rem;
 	}
 	@include mxn.mq(large) {
-		padding-inline: 11.2rem;
+		padding-inline: clamp(8rem, 8vw, 11.2rem);
 	}
 
 	&__heading {
@@ -22,10 +22,32 @@
 		text-transform: uppercase;
 		letter-spacing: var(--ls-400);
 		color: var(--clr-content-heading, black);
+
+		&:not(:first-child) {
+			margin-block-start: 0.6em;
+		}
+	}
+
+	&__kicker {
+		font-size: var(--fz-200);
+		font-weight: var(--fw-bold);
+		text-transform: uppercase;
+		letter-spacing: var(--ls-500);
+		color: var(--clr-neutral-100);
+	}
+
+	&__creation {
+		margin-top: 1.25em;
+		font-size: var(--fz-300);
+		color: var(--clr-neutral-100);
+		& span {
+			opacity: 0.75;
+			margin-inline-end: 0.8rem;
+		}
 	}
 
 	& p {
-		max-width: 50ch;
+		max-width: 37ch;
 	}
 
 	&--dark {
