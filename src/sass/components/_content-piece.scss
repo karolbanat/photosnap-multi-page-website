@@ -33,6 +33,16 @@
 		--clr-content-heading: var(--clr-neutral-100);
 		--clr-content-text: var(--clr-neutral-160);
 	}
+
+	&--transparent {
+		--bg-content: var(--clr-neutral-900);
+		--clr-content-heading: var(--clr-neutral-100);
+		--clr-content-text: var(--clr-neutral-160);
+		@include mxn.mq(small) {
+			--bg-content: transparent;
+		}
+	}
+
 	&--light {
 		--bg-content: var(--clr-neutral-100);
 		--clr-content-heading: var(--clr-neutral-900);

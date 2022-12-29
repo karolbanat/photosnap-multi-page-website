@@ -8,7 +8,7 @@
 		--second-column: 1fr;
 		grid-template-columns: var(--first-column, 1fr) var(--second-column, 1fr);
 
-		&[data-direction='rtl'] {
+		&:where([data-direction='rtl']) {
 			grid-template-columns: var(--second-column, 1fr) var(--first-column, 1fr);
 			& > :nth-child(2n) {
 				grid-column: 1;
@@ -24,7 +24,7 @@
 			}
 		}
 
-		&[data-direction='ltr'] {
+		&:where([data-direction='ltr']) {
 			& > :nth-child(2n) {
 				grid-column: 2;
 			}
