@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as mxn;
+
+.cta {
+	--bg-image: url('../assets/shared/mobile/bg-beta.jpg');
+	padding-block: clamp(6.4rem, 9vw, 6.8rem);
+	background-image: var(--bg-image);
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include mxn.mq(small) {
+		--bg-image: url('../assets/shared/tablet/bg-beta.jpg');
+	}
+	@include mxn.mq(large) {
+		--bg-image: url('../assets/shared/desktop/bg-beta.jpg');
+	}
+
+	&__heading {
+		max-width: 15ch;
+		font-size: var(--fz-700);
+		letter-spacing: var(--ls-400);
+		text-transform: uppercase;
+		color: var(--clr-neutral-100);
+	}
+}

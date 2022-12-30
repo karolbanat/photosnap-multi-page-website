@@ -16,6 +16,17 @@
 	justify-content: space-between;
 }
 
+.cta-flex {
+	display: flex;
+	gap: 2.4rem;
+	flex-direction: column;
+	@include mxn.mq(small) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
 .socials-flex {
 	display: flex;
 	align-items: center;
