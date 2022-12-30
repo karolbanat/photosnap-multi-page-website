@@ -6,4 +6,8 @@
 	&[data-space='medium'] {
 		--section-spacer: clamp(8rem, 17.5vw, 12rem);
 	}
+
+	&[data-space='large'] {
+		--section-spacer: clamp(6.4rem, 14.5vw, 16rem);
+	}
 }
