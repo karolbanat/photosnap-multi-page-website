@@ -6,6 +6,7 @@
 	font-weight: var(--fw-bold);
 	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: var(--ls-500);
 	color: var(--button-text);
 	background-color: var(--button-background);
@@ -21,6 +22,13 @@
 	&--dark {
 		--button-text: var(--clr-neutral-100);
 		--button-background: var(--clr-neutral-900);
+		--hover-button-text: var(--clr-neutral-900);
+		--hover-button-background: var(--clr-neutral-400);
+	}
+
+	&--light {
+		--button-text: var(--clr-neutral-900);
+		--button-background: var(--clr-neutral-100);
 		--hover-button-text: var(--clr-neutral-900);
 		--hover-button-background: var(--clr-neutral-400);
 	}
