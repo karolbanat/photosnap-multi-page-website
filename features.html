@@ -24,61 +24,289 @@
 </head>
 
 <body>
+    <a href="#main-content"
+       class="skip-link">Skip to content</a>
 
-    Stories
-    Features
-    Pricing
+    <header>
+        <nav aria-label="Primary"
+             class="primary-navigation">
+            <div class="container">
+                <div class="primary-navigation-flex">
+                    <a href="./index.html">
+                        <img src="./dist/assets/shared/desktop/logo.svg"
+                             alt="Photosnap">
+                    </a>
+                    <button aria-controls="primary-nav"
+                            aria-expanded="false"
+                            aria-label="Open menu"
+                            class="toggle-button primary-navigation__menu-toggle">
+                        <img src="./dist/assets/shared/mobile/menu.svg"
+                             alt=""
+                             class="toggle-button__icon-open">
+                        <img src="./dist/assets/shared/mobile/close.svg"
+                             alt=""
+                             class="toggle-button__icon-close">
+                    </button>
+                    <div id="primary-nav"
+                         class="primary-navigation__nav">
+                        <ul class="primary-navigation__nav-list">
+                            <li>
+                                <a href="./stories.html"
+                                   class="link primary-navigation__nav-link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="link primary-navigation__nav-link">Features</a>
+                            </li>
+                            <li>
+                                <a href="./pricing.html"
+                                   class="link primary-navigation__nav-link">Pricing</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                           class="button button--dark primary-navigation__nav-link">Get an invite</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    Get an invite
+    <main id="main-content">
+        <!-- hero start -->
+        <section aria-labelledby="create-and-share-heading">
+            <div class="uneven-grid"
+                 data-direction="rtl">
+                <picture>
+                    <source media="(min-width: 992px)"
+                            srcset="./dist/assets/features/desktop/hero.jpg">
+                    <source media="(min-width: 768px)"
+                            srcset="./dist/assets/features/tablet/hero.jpg">
+                    <img src="./dist/assets/features/mobile/hero.jpg"
+                         alt="Man holding a camera, standing on the rocks."
+                         class="full-size-img">
+                </picture>
+                <header class="content-piece content-piece--dark content-piece--highlighted | flow">
+                    <h1 id="create-and-share-heading"
+                        class="content-piece__heading">Features</h1>
+                    <p>We make sure all of our features are designed to be loved by every aspiring and even
+                        professional photograpers who wanted to share their stories.</p>
+                </header>
+            </div>
+        </section>
+        <!-- hero end -->
 
-    Features
+        <!-- features section end -->
+        <section aria-labelledby="features-heading"
+                 class="section-spacer"
+                 data-space="medium">
+            <h2 id="features-heading"
+                class="visually-hidden">Features you get</h2>
+            <div class="container">
+                <ul class="gradual-grid">
 
-    We make sure all of our features are designed to be loved by every aspiring and even
-    professional photograpers who wanted to share their stories.
+                    <!-- responsive feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/responsive.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">100% Responsive</h3>
+                            <p>No matter which the device you’re on, our site is fully responsive and stories
+                                look beautiful on any screen.</p>
+                        </article>
+                    </li>
+                    <!-- responsive feature card end -->
 
-    100% Responsive
+                    <!-- no limit feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/no-limit.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">No Photo Upload Limit</h3>
+                            <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and
+                                share all of your stories in one go.</p>
+                        </article>
+                    </li>
+                    <!-- no limit feature card end -->
 
-    No matter which the device you’re on, our site is fully responsive and stories
-    look beautiful on any screen.
+                    <!-- embed feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/embed.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">Available to Embed</h3>
+                            <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos,
+                                Google Maps, and more.</p>
+                        </article>
+                    </li>
+                    <!-- embed feature card end -->
 
-    No Photo Upload Limit
+                    <!-- custom domain feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/custom-domain.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">Custom Domain</h3>
+                            <p>With Photosnap subscriptions you can host your stories on your own domain. You can
+                                also remove our branding!</p>
+                        </article>
+                    </li>
+                    <!-- custom domain feature card end -->
 
-    Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share
-    all of your stories in one go.
+                    <!-- boost feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/boost-exposure.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">Boost Your Exposure</h3>
+                            <p>Users that viewed your story or gallery can easily get notifed of new and featured
+                                stories with our built in mailing list.</p>
+                        </article>
+                    </li>
+                    <!-- boost feature card end -->
 
-    Available to Embed
+                    <!-- darg & drop feature card -->
+                    <li>
+                        <article class="feature-card">
+                            <img src="./dist/assets/features/desktop/drag-drop.svg"
+                                 alt=""
+                                 class="feature-card__icon">
+                            <h3 class="feature-card__heading">Drag & Drop Image</h3>
+                            <p>Easily drag and drop your image and get beautiful shots everytime. No over the top
+                                tooling to add friction to creating stories.</p>
+                        </article>
+                    </li>
+                    <!-- drag & drop feature card end -->
+                </ul>
+            </div>
+        </section>
+        <!-- features section end -->
 
-    Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google
-    Maps, and more.
+        <section aria-labelledby="cta-heading"
+                 class="cta">
+            <div class="container">
+                <div class="cta-flex">
+                    <h2 id="cta-heading"
+                        class="cta__heading">We're in Beta. Get your invite today!</h2>
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Get an invite</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    Custom Domain
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer-grid">
+                <!-- footer logo start -->
+                <div data-area="logo">
+                    <a href="./index.html">
+                        <img src="./dist/assets/shared/desktop/logo-light.svg"
+                             alt="Photosnap">
+                    </a>
+                </div>
+                <!-- footer logo end -->
 
-    With Photosnap subscriptions you can host your stories on your own domain. You can
-    also remove our branding!
+                <!-- footer socials start -->
+                <div data-area="socials">
+                    <ul class="socials-flex">
+                        <li>
+                            <a aria-label="Facebook"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/facebook.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="YouTube"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/youtube.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Twitter"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/twitter.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Pinterest"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/pinterest.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Instagram"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/instagram.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer socials end -->
 
-    Boost Your Exposure
+                <!-- footer navigation start -->
+                <div data-area="navigation">
+                    <nav aria-label="Footer">
+                        <ul class="page-footer__nav-list">
+                            <li>
+                                <a href="./index.html"
+                                   class="link">Home</a>
+                            </li>
+                            <li>
+                                <a href="./stories.html"
+                                   class="link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="link">Features</a>
+                            </li>
+                            <li>
+                                <a href="./pricing.html"
+                                   class="link">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- footer navigation end -->
 
-    Users that viewed your story or gallery can easily get notifed of new and featured
-    stories with our built in mailing list.
+                <!-- footer invite link start -->
+                <div data-area="cta">
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Get an invite</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </div>
+                <!-- footer invite link end -->
 
-    Drag & Drop Image
+                <div data-area="copyright">
+                    <p class="page-footer__copyright">Copyright 2019. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    Easily drag and drop your image and get beautiful shots everytime. No over the top
-    tooling to add friction to creating stories.
-
-    We're in Beta. Get your invite today!
-
-    Get an invite
-
-    Home
-    Stories
-    Features
-    Pricing
-
-    Get an invite
-
-    Copyright 2019. All Rights Reserved
-
+    <script src="./dist/js/main.min.js"
+            defer></script>
 </body>
 
 </html>
