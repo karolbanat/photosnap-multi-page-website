@@ -24,69 +24,299 @@
 </head>
 
 <body>
+    <a href="#main-content"
+       class="skip-link">Skip to content</a>
 
-    Stories
-    Features
-    Pricing
+    <header>
+        <nav aria-label="Primary"
+             class="primary-navigation">
+            <div class="container">
+                <div class="primary-navigation-flex">
+                    <a href="./index.html">
+                        <img src="./dist/assets/shared/desktop/logo.svg"
+                             alt="Photosnap">
+                    </a>
+                    <button aria-controls="primary-nav"
+                            aria-expanded="false"
+                            aria-label="Open menu"
+                            class="toggle-button primary-navigation__menu-toggle">
+                        <img src="./dist/assets/shared/mobile/menu.svg"
+                             alt=""
+                             class="toggle-button__icon-open">
+                        <img src="./dist/assets/shared/mobile/close.svg"
+                             alt=""
+                             class="toggle-button__icon-close">
+                    </button>
+                    <div id="primary-nav"
+                         class="primary-navigation__nav">
+                        <ul class="primary-navigation__nav-list">
+                            <li>
+                                <a href="./stories.html"
+                                   class="link primary-navigation__nav-link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="./features.html"
+                                   class="link primary-navigation__nav-link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="link primary-navigation__nav-link">Pricing</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                           class="button button--dark primary-navigation__nav-link">Get an invite</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    Get an invite
+    <main id="main-content">
+        <!-- hero start -->
+        <section aria-labelledby="create-and-share-heading">
+            <div class="uneven-grid"
+                 data-direction="rtl">
+                <picture>
+                    <source media="(min-width: 992px)"
+                            srcset="./dist/assets/pricing/desktop/hero.jpg">
+                    <source media="(min-width: 768px)"
+                            srcset="./dist/assets/pricing/tablet/hero.jpg">
+                    <img src="./dist/assets/pricing/mobile/hero.jpg"
+                         alt="Shadow outline of woman taking taking pictures with camera standing on stand."
+                         class="full-size-img">
+                </picture>
+                <header class="content-piece content-piece--dark content-piece--highlighted | flow">
+                    <h1 id="create-and-share-heading"
+                        class="content-piece__heading">Pricing</h1>
+                    <p>Create a your stories, Photosnap is a platform for photographers and visual storytellers.
+                        It’s the simple way to create and share your photos.</p>
+                </header>
+            </div>
+        </section>
+        <!-- hero end -->
 
-    Pricing
+        <!-- pricing section start -->
+        <section class="section-spacer"
+                 data-space="large">
+            <h2 class="visually-hidden">Plans</h2>
+            <div class="container">
+                <!-- plan billing switch -->
+                <div class="switch">
+                    <span id="monthly-label"
+                          class="switch__label">Monthly</span>
+                    <button aria-checked="false"
+                            aria-labelledby="monthly-label"
+                            role="switch"
+                            type="button"
+                            class="switch__button">
+                    </button>
+                    <span id="yearly-label"
+                          class="switch__label">Yearly</span>
+                </div>
+                <!-- plan billing switch end -->
 
-    Create a your stories, Photosnap is a platform for photographers and visual storytellers.
-    It’s the simple way to create and share your photos.
+                <ul class="triple-grid">
+                    <!-- basic plan card -->
+                    <li>
+                        <article class="plan-card">
+                            <header class="plan-card__header">
+                                <h3 class="plan-card__heading">Basic</h3>
+                                <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.
+                                </p>
+                            </header>
+                            <p class="plan-card__billing">
+                                <span class="plan-card__price">$19.00</span>
+                                <span class="plan-card__frequency">per month</span>
+                            </p>
+                            <a href="#"
+                               class="button button--dark">Pick Plan</a>
+                        </article>
+                    </li>
+                    <!-- basic plan card end -->
 
-    Monthly
-    Yearly
+                    <!-- pro plan card -->
+                    <li>
+                        <article class="plan-card plan-card--highlighted">
+                            <header class="plan-card__header">
+                                <h3 class="plan-card__heading">Pro</h3>
+                                <p>More advanced features available. Recommended for photography veterans and
+                                    professionals.</p>
+                            </header>
+                            <p class="plan-card__billing">
+                                <span class="plan-card__price">$39.00</span>
+                                <span class="plan-card__frequency">per month</span>
+                            </p>
+                            <a href="#"
+                               class="button button--light">Pick Plan</a>
+                        </article>
+                    </li>
+                    <!-- basic plan card end -->
 
-    Basic
-    Includes basic usage of our platform. Recommended for new and aspiring photographers.
-    $19.00 per month
-    $190.00 per year
-    Pick Plan
+                    <!-- business plan card -->
+                    <li>
+                        <article class="plan-card">
+                            <header class="plan-card__header">
+                                <h3 class="plan-card__heading">Business</h3>
+                                <p>Additional features available such as more detailed metrics. Recommended for business
+                                    owners.</p>
+                            </header>
+                            <p class="plan-card__billing">
+                                <span class="plan-card__price">$99.00</span>
+                                <span class="plan-card__frequency">per month</span>
+                            </p>
+                            <a href="#"
+                               class="button button--dark">Pick Plan</a>
+                        </article>
+                    </li>
+                    <!-- business plan card end -->
 
-    Pro
-    More advanced features available. Recommended for photography veterans and professionals.
-    $39.00 per month
-    $390.00 per year
-    Pick Plan
+                </ul>
+            </div>
+        </section>
+        <!-- pricing section end -->
 
-    Business
-    Additional features available such as more detailed metrics. Recommended for business owners.
-    $99.00 per month
-    $990.00 per year
-    Pick Plan
+        <!-- comparison section end -->
+        <section>
+            <h2>Compare</h2>
+            <div class="container">
+                <!-- 
+                    [TODO: table]
+                Unlimited Story Posting
+                Unlimited Photo Upload
+                Embedding Custom Content
+                Customize Metadata
+                Advanced Metrics
+                Photo Downloads
+                Search Engine Indexing
+                Custom Analytics
+                -->
+            </div>
+        </section>
+        <!-- comparison section end -->
 
-    Compare
+        <!-- cta section -->
+        <section aria-labelledby="cta-heading"
+                 class="cta">
+            <div class="container">
+                <div class="cta-flex">
+                    <h2 id="cta-heading"
+                        class="cta__heading">We're in Beta. Get your invite today!</h2>
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Get an invite</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- cta section end -->
+    </main>
 
-    The Features
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer-grid">
+                <!-- footer logo start -->
+                <div data-area="logo">
+                    <a href="./index.html">
+                        <img src="./dist/assets/shared/desktop/logo-light.svg"
+                             alt="Photosnap">
+                    </a>
+                </div>
+                <!-- footer logo end -->
 
-    Basic
-    Pro
-    Business
+                <!-- footer socials start -->
+                <div data-area="socials">
+                    <ul class="socials-flex">
+                        <li>
+                            <a aria-label="Facebook"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/facebook.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="YouTube"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/youtube.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Twitter"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/twitter.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Pinterest"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/pinterest.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Instagram"
+                               href="#"
+                               class="social-link">
+                                <img src="./dist/assets/shared/desktop/instagram.svg"
+                                     alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer socials end -->
 
-    Unlimited Story Posting
-    Unlimited Photo Upload
-    Embedding Custom Content
-    Customize Metadata
-    Advanced Metrics
-    Photo Downloads
-    Search Engine Indexing
-    Custom Analytics
+                <!-- footer navigation start -->
+                <div data-area="navigation">
+                    <nav aria-label="Footer">
+                        <ul class="page-footer__nav-list">
+                            <li>
+                                <a href="./index.html"
+                                   class="link">Home</a>
+                            </li>
+                            <li>
+                                <a href="./stories.html"
+                                   class="link">Stories</a>
+                            </li>
+                            <li>
+                                <a href="./features.html"
+                                   class="link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="link">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- footer navigation end -->
 
-    We're in Beta. Get your invite today!
+                <!-- footer invite link start -->
+                <div data-area="cta">
+                    <a href="#"
+                       class="point-link point-link--light">
+                        <span>Get an invite</span>
+                        <img src="./dist/assets/shared/desktop/arrow-light.svg"
+                             alt="">
+                    </a>
+                </div>
+                <!-- footer invite link end -->
 
-    Get an invite
+                <div data-area="copyright">
+                    <p class="page-footer__copyright">Copyright 2019. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    Home
-    Stories
-    Features
-    Pricing
-
-    Get an invite
-
-    Copyright 2019. All Rights Reserved
-
+    <script src="./dist/js/main.min.js"
+            defer></script>
 </body>
 
 </html>
