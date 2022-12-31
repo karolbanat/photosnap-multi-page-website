@@ -1,0 +1,67 @@
+@use '../abstracts/mixins' as mxn;
+
+.switch {
+	--button-width: 6.4rem;
+	--button-height: calc(var(--button-width) / 2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3.2rem;
+
+	&__label {
+		font-size: var(--fz-500);
+		font-weight: var(--fw-bold);
+		color: var(--clr-neutral-900);
+		opacity: 0.5;
+
+		&[data-active] {
+			opacity: 1;
+		}
+	}
+
+	&__button {
+		/* button appearance controls */
+		--bg-color: var(--clr-neutral-400);
+		--inner-padding: 0.4rem;
+		/* transition controls */
+		--transition-duration: 0.35s;
+		--easing-function: ease-in-out;
+		/* inner circle controls */
+		--bg-inner-circle: var(--clr-neutral-900);
+		--inner-circle-size: calc(var(--button-height) - 2 * var(--inner-padding));
+		--inner-circle-horizontal-position: var(--inner-padding);
+
+		position: relative;
+		width: var(--button-width);
+		height: var(--button-height);
+		background-color: var(--bg-color);
+		border: none;
+		border-radius: 100vmax;
+		cursor: pointer;
+		transition: background-color var(--transition-duration) var(--easing-function);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: var(--inner-circle-horizontal-position);
+			transform: translateY(-50%);
+			width: var(--inner-circle-size);
+			aspect-ratio: 1 / 1;
+			background-color: var(--bg-inner-circle);
+			border-radius: 50%;
+			transition: background-color var(--transition-duration) var(--easing-function),
+				left var(--transition-duration) var(--easing-function);
+		}
+
+		&[aria-checked='true'] {
+			--inner-circle-horizontal-position: calc(100% - var(--inner-padding) - var(--inner-circle-size));
+		}
+
+		&:hover,
+		&:focus-visible {
+			--bg-color: var(--clr-neutral-900);
+			--bg-inner-circle: var(--clr-neutral-100);
+		}
+	}
+}
