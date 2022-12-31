@@ -62,6 +62,13 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 
+	&[data-gap='tight'] {
+		gap: 2.4rem;
+		@include mxn.mq(large) {
+			gap: 3rem;
+		}
+	}
+
 	&[data-gap='loose'] {
 		gap: 5.6rem;
 		@include mxn.mq(medium) {
