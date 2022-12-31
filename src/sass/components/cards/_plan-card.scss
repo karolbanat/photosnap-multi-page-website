@@ -1,0 +1,97 @@
+@use '../../abstracts/mixins' as mxn;
+
+.plan-card {
+	--card-padding-block: 4.8rem;
+	--card-padding-block-increase: 0rem;
+	--card-padding-inline: 3.6rem;
+	--card-bg: var(--clr-neutral-400);
+	--card-text: var(--clr-neutral-960);
+	--card-heading: var(--clr-neutral-900);
+
+	/* layout */
+	display: grid;
+	gap: 4rem;
+	/* sizing */
+	padding-inline: var(--card-padding-inline);
+	padding-block: calc(var(--card-padding-block) + var(--card-padding-block-increase));
+	text-align: center;
+	/* appearance */
+	background-color: var(--card-bg);
+	color: var(--card-text);
+	@include mxn.mq(small) {
+		--card-padding-inline: 4rem;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5.4rem;
+		row-gap: 3.2rem;
+		text-align: start;
+
+		& > :nth-child(2n) {
+			text-align: end;
+		}
+	}
+	@include mxn.mq(large) {
+		grid-template-columns: 1fr;
+		column-gap: 4rem;
+		row-gap: 4rem;
+		text-align: center;
+
+		& > :nth-child(2n) {
+			text-align: inherit;
+		}
+	}
+
+	/* card elements */
+	&__heading,
+	&__price {
+		font-weight: var(--fw-bold);
+		color: var(--card-heading);
+	}
+
+	&__heading {
+		margin-bottom: 0.75em;
+		font-size: var(--fz-600);
+		line-height: 1.05;
+	}
+
+	&__price {
+		font-size: var(--fz-800);
+		line-height: 1.2;
+		letter-spacing: var(--ls-400);
+	}
+
+	&__billing span {
+		display: block;
+	}
+
+	/* card modifiers */
+	&--highlighted {
+		--card-bg: var(--clr-neutral-900);
+		--card-text: var(--clr-neutral-160);
+		--card-heading: var(--clr-neutral-100);
+		@include mxn.mq(large) {
+			--card-padding-block-increase: 3.2rem;
+		}
+
+		position: relative;
+
+		/* line at the top of the card */
+		&::before {
+			--line-size: 0.6rem;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: var(--line-size);
+			background-image: var(--accent-gradient-400);
+			@include mxn.mq(small) {
+				width: var(--line-size);
+				height: 100%;
+			}
+			@include mxn.mq(large) {
+				width: 100%;
+				height: var(--line-size);
+			}
+		}
+	}
+}

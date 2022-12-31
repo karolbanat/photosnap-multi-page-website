@@ -1,5 +1,11 @@
 @use '../abstracts/mixins' as mxn;
 
+/* additions */
+.align-center-vertical {
+	align-items: center;
+}
+
+/* layouts */
 .uneven-grid {
 	display: grid;
 	grid-auto-flow: dense;

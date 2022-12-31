@@ -32,28 +32,35 @@
 		--inner-circle-horizontal-position: var(--inner-padding);
 
 		position: relative;
+		/* sizing */
 		width: var(--button-width);
 		height: var(--button-height);
+		/* appearance */
 		background-color: var(--bg-color);
 		border: none;
 		border-radius: 100vmax;
 		cursor: pointer;
 		transition: background-color var(--transition-duration) var(--easing-function);
 
+		/* circle inside the button */
 		&::before {
 			content: '';
+			/* positioning */
 			position: absolute;
 			top: 50%;
 			left: var(--inner-circle-horizontal-position);
 			transform: translateY(-50%);
+			/* sizing */
 			width: var(--inner-circle-size);
 			aspect-ratio: 1 / 1;
+			/* apperance */
 			background-color: var(--bg-inner-circle);
 			border-radius: 50%;
 			transition: background-color var(--transition-duration) var(--easing-function),
 				left var(--transition-duration) var(--easing-function);
 		}
 
+		/* when checked it moves circle to right side */
 		&[aria-checked='true'] {
 			--inner-circle-horizontal-position: calc(100% - var(--inner-padding) - var(--inner-circle-size));
 		}
