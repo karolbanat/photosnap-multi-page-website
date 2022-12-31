@@ -1,5 +1,12 @@
 @use '../abstracts/mixins' as mxn;
 
+.margin-bottom-medium {
+	margin-block-end: 4rem;
+	@include mxn.mq(large) {
+		margin-block-end: 4.8rem;
+	}
+}
+
 .section-spacer {
 	margin-block: var(--section-spacer, 10rem);
 
