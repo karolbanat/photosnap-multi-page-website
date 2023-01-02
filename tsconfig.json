@@ -1,5 +1,5 @@
 {
-	"files": ["./src/ts/main.ts"],
+	"files": ["./src/ts/main.ts", "./src/ts/pricing.ts"],
 	"compilerOptions": {
 		"noImplicitAny": true,
 		"target": "es2015",

@@ -14,7 +14,7 @@
 		color: var(--clr-neutral-900);
 		opacity: 0.5;
 
-		&[data-active] {
+		&[data-active='true'] {
 			opacity: 1;
 		}
 	}
