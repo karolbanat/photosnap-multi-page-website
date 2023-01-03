@@ -1,0 +1,7 @@
+@use '../abstracts/mixins' as mxn;
+
+.display-none-sm {
+	@include mxn.max-mq(small) {
+		display: none;
+	}
+}
