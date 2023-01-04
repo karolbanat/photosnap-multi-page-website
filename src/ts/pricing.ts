@@ -34,6 +34,7 @@ const handlePricingSwitch = (e: Event): void => {
 
 	/* Set switch elements attributes */
 	button.setAttribute('aria-checked', (!prevSwitchState).toString());
+	button.setAttribute('aria-labbeledby', newFrequency === 'monthly' ? switchMonthlyLabel.id : switchYearlyLabel.id);
 	switchMonthlyLabel?.setAttribute('data-active', prevSwitchState.toString());
 	switchYearlyLabel?.setAttribute('data-active', (!prevSwitchState).toString());
 
