@@ -7,6 +7,13 @@
 	}
 }
 
+.margin-bottom-small {
+	margin-block-end: 4rem;
+	@include mxn.mq(large) {
+		margin-block-end: 3.2rem;
+	}
+}
+
 .section-spacer {
 	margin-block: var(--section-spacer, 10rem);
 
