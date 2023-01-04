@@ -5,3 +5,9 @@
 		display: none;
 	}
 }
+
+.display-none-from-sm {
+	@include mxn.mq(small) {
+		display: none;
+	}
+}

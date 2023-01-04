@@ -186,7 +186,8 @@
         <section class="section-spacer"
                  data-space="large">
             <h2 class="section-heading | display-none-sm">Compare</h2>
-            <div class="container">
+            <div class="container"
+                 data-size="small">
 
                 <!-- mobile table start -->
                 <!-- ids legend:
@@ -203,29 +204,34 @@
                         sei : search engine indexing
                         ca : custom analytics
                 -->
-                <table>
+                <table class="comparison-table | display-none-from-sm">
                     <thead>
                         <tr>
                             <th id="mb-features"
-                                colspan="3">The Features</th>
+                                colspan="3"
+                                class="comparison-table__header">The Features</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- unlimited story posting start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-usp"
                                 headers="mb-features"
-                                colspan="3">Unlimited Story Posting</th>
+                                colspan="3"
+                                class="comparison-table__header">Unlimited Story Posting</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-usp"
-                                headers="mb-usp">Basic</th>
+                                headers="mb-usp"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-usp"
-                                headers="mb-usp">Pro</th>
+                                headers="mb-usp"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-usp"
-                                headers="mb-usp">Business</th>
+                                headers="mb-usp"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-usp mb-bsc-usp">
                                 <span class="visually-hidden">Included</span>
                                 <img src="./dist/assets/pricing/desktop/check.svg"
@@ -245,20 +251,24 @@
                         <!-- unlimited story posting end -->
 
                         <!-- unlimited photo upload start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-upu"
                                 headers="mb-features"
-                                colspan="3">Unlimited Photo Upload</th>
+                                colspan="3"
+                                class="comparison-table__header">Unlimited Photo Upload</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-upu"
-                                headers="mb-upu">Basic</th>
+                                headers="mb-upu"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-upu"
-                                headers="mb-upu">Pro</th>
+                                headers="mb-upu"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-upu"
-                                headers="mb-upu">Business</th>
+                                headers="mb-upu"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-upu mb-bsc-upu">
                                 <span class="visually-hidden">Included</span>
                                 <img src="./dist/assets/pricing/desktop/check.svg"
@@ -278,20 +288,24 @@
                         <!-- unlimited photo upload end -->
 
                         <!-- embedding custom content start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-ecc"
                                 headers="mb-features"
-                                colspan="3">Embedding Custom Content</th>
+                                colspan="3"
+                                class="comparison-table__header">Embedding Custom Content</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-ecc"
-                                headers="mb-ecc">Basic</th>
+                                headers="mb-ecc"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-ecc"
-                                headers="mb-ecc">Pro</th>
+                                headers="mb-ecc"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-ecc"
-                                headers="mb-ecc">Business</th>
+                                headers="mb-ecc"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-ecc mb-bsc-ecc">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -309,20 +323,24 @@
                         <!-- embedding custom content end -->
 
                         <!-- customize metadata start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-cm"
                                 headers="mb-features"
-                                colspan="3">Customize Metadata</th>
+                                colspan="3"
+                                class="comparison-table__header">Customize Metadata</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-cm"
-                                headers="mb-cm">Basic</th>
+                                headers="mb-cm"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-cm"
-                                headers="mb-cm">Pro</th>
+                                headers="mb-cm"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-cm"
-                                headers="mb-cm">Business</th>
+                                headers="mb-cm"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-cm mb-bsc-cm">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -340,20 +358,24 @@
                         <!-- customize metadata end -->
 
                         <!-- advanced metrics start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-am"
                                 headers="mb-features"
-                                colspan="3">Advanced Metrics</th>
+                                colspan="3"
+                                class="comparison-table__header">Advanced Metrics</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-am"
-                                headers="mb-am">Basic</th>
+                                headers="mb-am"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-am"
-                                headers="mb-am">Pro</th>
+                                headers="mb-am"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-am"
-                                headers="mb-am">Business</th>
+                                headers="mb-am"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-am mb-bsc-am">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -369,20 +391,24 @@
                         <!-- advanced metrics end -->
 
                         <!-- photo downloads start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-pd"
                                 headers="mb-features"
-                                colspan="3">Photo Uploads</th>
+                                colspan="3"
+                                class="comparison-table__header">Photo Uploads</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-pd"
-                                headers="mb-pd">Basic</th>
+                                headers="mb-pd"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-pd"
-                                headers="mb-pd">Pro</th>
+                                headers="mb-pd"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-pd"
-                                headers="mb-pd">Business</th>
+                                headers="mb-pd"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-pd mb-bsc-pd">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -398,20 +424,24 @@
                         <!-- photo downloads end -->
 
                         <!-- search engine indexing start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-sei"
                                 headers="mb-features"
-                                colspan="3">Search Engine Indexing</th>
+                                colspan="3"
+                                class="comparison-table__header">Search Engine Indexing</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-sei"
-                                headers="mb-sei">Basic</th>
+                                headers="mb-sei"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-sei"
-                                headers="mb-sei">Pro</th>
+                                headers="mb-sei"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-sei"
-                                headers="mb-sei">Business</th>
+                                headers="mb-sei"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-sei mb-bsc-sei">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -427,20 +457,24 @@
                         <!-- search engine indexing end -->
 
                         <!-- custom analytics start -->
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--header">
                             <th id="mb-ca"
                                 headers="mb-features"
-                                colspan="3">Custom Analytics</th>
+                                colspan="3"
+                                class="comparison-table__header">Custom Analytics</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="mb-bsc-ca"
-                                headers="mb-ca">Basic</th>
+                                headers="mb-ca"
+                                class="comparison-table__header comparison-table__header--faded">Basic</th>
                             <th id="mb-pro-ca"
-                                headers="mb-ca">Pro</th>
+                                headers="mb-ca"
+                                class="comparison-table__header comparison-table__header--faded">Pro</th>
                             <th id="mb-bsn-ca"
-                                headers="mb-ca">Business</th>
+                                headers="mb-ca"
+                                class="comparison-table__header comparison-table__header--faded">Business</th>
                         </tr>
-                        <tr>
+                        <tr class="comparison-table__row comparison-table__row--data">
                             <td headers="mb-ca mb-bsc-ca">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -474,25 +508,30 @@
                         sei : search engine indexing
                         ca : custom analytics
                 -->
-                <table>
+                <table class="comparison-table | display-none-sm">
                     <thead>
                         <tr>
                             <th id="dt-features"
-                                scope="col">The Features</th>
+                                scope="col"
+                                class="comparison-table__header">The Features</th>
                             <th id="dt-bsc"
-                                scope="col">Basic</th>
+                                scope="col"
+                                class="comparison-table__header">Basic</th>
                             <th id="dt-pro"
-                                scope="col">Pro</th>
+                                scope="col"
+                                class="comparison-table__header">Pro</th>
                             <th id="dt-bsn"
-                                scope="col">Business</th>
+                                scope="col"
+                                class="comparison-table__header">Business</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- unlimited story posting start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-usp"
                                 headers="dt-features"
-                                scope="row">Unlimited Story Posting</th>
+                                scope="row"
+                                class="comparison-table__header">Unlimited Story Posting</th>
                             <td headers="dt-bsc dt-usp">
                                 <span class="visually-hidden">Included</span>
                                 <img src="./dist/assets/pricing/desktop/check.svg"
@@ -512,10 +551,11 @@
                         <!-- unlimited story posting end -->
 
                         <!-- unlimited photo upload start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-upu"
                                 headers="dt-features"
-                                scope="row">Unlimited Photo Upload</th>
+                                scope="row"
+                                class="comparison-table__header">Unlimited Photo Upload</th>
                             <td headers="dt-bsc dt-upu">
                                 <span class="visually-hidden">Included</span>
                                 <img src="./dist/assets/pricing/desktop/check.svg"
@@ -535,10 +575,11 @@
                         <!-- unlimited photo upload end -->
 
                         <!-- embedding custom content start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-ecc"
                                 headers="dt-features"
-                                scope="row">Embedding Custom Content</th>
+                                scope="row"
+                                class="comparison-table__header">Embedding Custom Content</th>
                             <td headers="dt-bsc dt-ecc">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -556,10 +597,11 @@
                         <!-- embedding custom content end -->
 
                         <!-- customize metadata start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-cm"
                                 headers="dt-features"
-                                scope="row">Customize Metadata</th>
+                                scope="row"
+                                class="comparison-table__header">Customize Metadata</th>
                             <td headers="dt-bsc dt-cm">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -577,10 +619,11 @@
                         <!-- customize metadata end -->
 
                         <!-- advanced metrics start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-am"
                                 headers="dt-features"
-                                scope="row">Advanced Metrics</th>
+                                scope="row"
+                                class="comparison-table__header">Advanced Metrics</th>
                             <td headers="dt-bsc dt-am">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -596,10 +639,11 @@
                         <!-- advanced metrics end -->
 
                         <!-- photo downloads start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-pd"
                                 headers="dt-features"
-                                scope="row">Photo Downloads</th>
+                                scope="row"
+                                class="comparison-table__header">Photo Downloads</th>
                             <td headers="dt-bsc dt-pd">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -615,10 +659,11 @@
                         <!-- photo downloads end -->
 
                         <!-- search engine indexing start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-sei"
                                 headers="dt-features"
-                                scope="row">Search Engine Indexing</th>
+                                scope="row"
+                                class="comparison-table__header">Search Engine Indexing</th>
                             <td headers="dt-bsc dt-sei">
                                 <span class="visually-hidden">Not Included</span>
                             </td>
@@ -634,10 +679,11 @@
                         <!-- search engine indexing end -->
 
                         <!-- custom analytics start -->
-                        <tr>
+                        <tr class="comparison-table__row">
                             <th id="dt-ca"
                                 headers="dt-features"
-                                scope="row">Custom Analytics</th>
+                                scope="row"
+                                class="comparison-table__header">Custom Analytics</th>
                             <td headers="dt-bsc dt-ca">
                                 <span class="visually-hidden">Not Included</span>
                             </td>

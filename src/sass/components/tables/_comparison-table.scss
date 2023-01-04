@@ -1,0 +1,80 @@
+@use '../../abstracts/mixins' as mxn;
+
+.comparison-table {
+	width: 100%;
+	font-size: var(--fz-200);
+	color: var(--clr-neutral-900);
+	text-align: left;
+
+	/* adds black line under table head */
+	& thead {
+		@include mxn.table-row-line(var(--clr-neutral-900));
+	}
+
+	& thead th {
+		padding-block: 2.4rem;
+	}
+
+	&__row {
+		/* generally modifiers for mobile table */
+		&--header {
+			& th {
+				padding-block-start: 2.4rem;
+				padding-block-end: 1.6rem;
+			}
+		}
+
+		&--data {
+			@include mxn.table-row-line(var(--clr-neutral-400));
+			& td {
+				padding-block-start: 0.8rem;
+				padding-block-end: 2.4rem;
+			}
+		}
+	}
+
+	&__header {
+		font-weight: var(--fw-bold, 700);
+		text-transform: uppercase;
+		letter-spacing: var(--ls-500);
+		line-height: 1.1;
+
+		&--faded {
+			font-size: 1rem;
+			opacity: 0.5;
+		}
+	}
+
+	@include mxn.max-mq(small) {
+		/* on smaller rows will be displayed with grid with column flow and even columns */
+		&__row {
+			display: grid;
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+		}
+	}
+
+	@include mxn.mq(small) {
+		& thead tr,
+		&__row {
+			display: grid;
+			grid-template-columns: 1fr repeat(3, 14rem);
+			align-items: center;
+
+			/* elements that are not on first column are not cetnered horizontaly */
+			& > :not(:first-child) {
+				justify-self: center;
+				text-align: center;
+			}
+		}
+
+		/* adds line separating rows */
+		&__row {
+			@include mxn.table-row-line(var(--clr-neutral-400));
+		}
+
+		&__row td {
+			padding-block: 2.4rem;
+		}
+	}
+}
