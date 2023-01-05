@@ -5,14 +5,22 @@
 	display: grid;
 	align-content: center;
 	padding-inline: 2.8rem;
-	padding-block: 7.2rem;
 	background-color: var(--bg-content);
 	color: var(--clr-content-text);
 	@include mxn.mq(medium) {
-		padding-inline: 5.4rem;
+		padding-inline: 0;
+		padding-block: 7.2rem;
 	}
-	@include mxn.mq(large) {
-		padding-inline: clamp(8rem, 8vw, 11.2rem);
+
+	&__inner {
+		padding-block: 7.2rem;
+		@include mxn.mq(medium) {
+			padding-block: 0;
+			padding-inline: 5.4rem;
+		}
+		@include mxn.mq(large) {
+			padding-inline: clamp(8rem, 8vw, 11.2rem);
+		}
 	}
 
 	&__heading {
