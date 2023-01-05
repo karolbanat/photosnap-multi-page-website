@@ -68,6 +68,7 @@
 		--card-bg: var(--clr-neutral-900);
 		--card-text: var(--clr-neutral-160);
 		--card-heading: var(--clr-neutral-100);
+		--line-size: 0.6rem;
 		@include mxn.mq(large) {
 			--card-padding-block-increase: 3.2rem;
 		}
@@ -75,23 +76,12 @@
 		position: relative;
 
 		/* line at the top of the card */
-		&::before {
-			--line-size: 0.6rem;
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: var(--line-size);
-			background-image: var(--accent-gradient-400);
-			@include mxn.mq(small) {
-				width: var(--line-size);
-				height: 100%;
-			}
-			@include mxn.mq(large) {
-				width: 100%;
-				height: var(--line-size);
-			}
+		@include mxn.highlight-line(100%, var(--line-size));
+		@include mxn.mq(small) {
+			@include mxn.highlight-line(var(--line-size), 100%);
+		}
+		@include mxn.mq(large) {
+			@include mxn.highlight-line(100%, var(--line-size));
 		}
 	}
 }
