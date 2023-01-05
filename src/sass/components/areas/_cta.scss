@@ -2,7 +2,6 @@
 
 .cta {
 	--bg-image: url('../assets/shared/mobile/bg-beta.jpg');
-	padding-block: clamp(6.4rem, 9vw, 6.8rem);
 	background-image: var(--bg-image);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -11,6 +10,10 @@
 	}
 	@include mxn.mq(large) {
 		--bg-image: url('../assets/shared/desktop/bg-beta.jpg');
+	}
+
+	&__inner {
+		padding-block: clamp(6.4rem, 9vw, 6.8rem);
 	}
 
 	&__heading {

@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as mxn;
+
+.horizontal-highlight-line-sm {
+	position: relative;
+	@include mxn.max-mq(medium) {
+		@include mxn.highlight-line(12.8rem, 0.6rem);
+	}
+}
+
+.vertical-highlight-line-md {
+	position: relative;
+	@include mxn.mq(medium) {
+		@include mxn.highlight-line(0.6rem, 100%);
+	}
+}

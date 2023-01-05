@@ -2,6 +2,7 @@
 
 .primary-navigation {
 	position: relative;
+	z-index: 9000;
 	padding-block: 1.6rem;
 
 	&__nav {
