@@ -1,5 +1,6 @@
 .link {
 	display: inline-block;
+	/* typography */
 	font-size: var(--fz-200);
 	font-weight: var(--fw-bold);
 	text-decoration: none;
@@ -7,6 +8,7 @@
 	line-height: 1.1;
 	letter-spacing: var(--ls-500);
 	color: var(--clr-link, currentColor);
+	/* other */
 	cursor: pointer;
 	transition: opacity 0.35s ease-in-out;
 

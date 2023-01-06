@@ -1,7 +1,9 @@
 .point-link {
+	/* display */
 	display: inline-flex;
 	align-items: center;
 	gap: 2.4rem;
+	/* typography */
 	font-size: var(--fz-200);
 	font-weight: var(--fw-bold, 700);
 	text-transform: uppercase;

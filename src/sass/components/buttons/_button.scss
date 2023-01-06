@@ -1,7 +1,9 @@
 .button {
+	/* sizing */
 	display: inline-block;
 	padding-block: 1em;
 	padding-inline: 2em;
+	/* typography */
 	font-size: var(--fz-200);
 	font-weight: var(--fw-bold);
 	text-decoration: none;
@@ -9,6 +11,7 @@
 	text-align: center;
 	letter-spacing: var(--ls-500);
 	color: var(--button-text);
+	/* appearance */
 	background-color: var(--button-background);
 	cursor: pointer;
 	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;

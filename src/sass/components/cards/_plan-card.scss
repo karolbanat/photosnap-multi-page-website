@@ -25,6 +25,7 @@
 		row-gap: 3.2rem;
 		text-align: start;
 
+		/* elements on right hand side column */
 		& > :nth-child(2n) {
 			text-align: end;
 		}
@@ -35,6 +36,7 @@
 		row-gap: 4rem;
 		text-align: center;
 
+		/* reset from small breakpoint's end alignment */
 		& > :nth-child(2n) {
 			text-align: inherit;
 		}

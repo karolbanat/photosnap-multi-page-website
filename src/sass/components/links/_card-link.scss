@@ -4,6 +4,7 @@
 	text-decoration: none;
 	transition: transform 0.3s ease-in-out;
 
+	/* gradient line at the bottom on hover/focus */
 	&::after {
 		content: '';
 		position: absolute;

@@ -61,7 +61,7 @@
 			grid-template-columns: 1fr repeat(3, 14rem);
 			align-items: center;
 
-			/* elements that are not on first column are not cetnered horizontaly */
+			/* elements that are not on first column are not centred horizontaly */
 			& > :not(:first-child) {
 				justify-self: center;
 				text-align: center;
