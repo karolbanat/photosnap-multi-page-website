@@ -3,6 +3,19 @@ body {
 	font-weight: var(--fw-regular);
 	font-family: var(--ff-primary);
 	color: var(--clr-neutral-960);
+
+	&::-webkit-scrollbar {
+		width: 1.5rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: var(--clr-neutral-400);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-image: var(--accent-gradient-400);
+		border-radius: 100vmax;
+	}
 }
 
 h1,
