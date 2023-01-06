@@ -2,8 +2,9 @@
 
 .primary-navigation {
 	position: relative;
-	z-index: 9000;
+	z-index: var(--nav-z-index);
 	padding-block: 1.6rem;
+	background-color: var(--clr-neutral-100);
 
 	&__nav {
 		display: flex;

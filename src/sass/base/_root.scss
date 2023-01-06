@@ -38,4 +38,7 @@
 	@each $letter-spacing, $value in variables.$letter-spacings {
 		--ls-#{$letter-spacing}: #{$value};
 	}
+
+	/* z-indexes */
+	--nav-z-index: 9000;
 }

@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as mxn;
+
+.mobile-nav-dropshadow {
+	@include mxn.max-mq(medium) {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-color: hsl(0deg 0% 0% / 0.5);
+			z-index: calc(var(--nav-z-index) - 1);
+		}
+	}
+}

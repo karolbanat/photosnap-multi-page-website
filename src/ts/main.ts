@@ -10,6 +10,7 @@ const handleNavigationToggle = (e: Event) => {
 	button.setAttribute('aria-expanded', (!wasExpanded).toString());
 	button.setAttribute('aria-label', buttonLabel);
 	targetNav?.toggleAttribute('data-expanded', !wasExpanded);
+	document.body.classList.toggle('mobile-nav-dropshadow', !wasExpanded);
 };
 
 navToggle.addEventListener('click', handleNavigationToggle);
