@@ -4,8 +4,8 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/photosnap-multipage-website-i1FWguSSlh)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/photosnap-multi-page-website/)
 
 ## Built with
 
